@@ -90,6 +90,13 @@ you need to keep in mind when evaluating a Git workflow:
   - Only one feature at a time deployed.
 * **Master-only Flow**
   ![Master-only](basic.png)
+  - AKA Single-branch
+  - Only work with Master branch.
+  - Force the commit directly to Master.
+  - Good quality code committed.
+  - Needs a good test suite.
+  - Needs good communication, cohesion and a very mature development team.
+  - Good for embracing pair-programming.
 * **Git release Flow**
   ![Microsoft's workflow with git release](branch-strategy.png)
   - Topic branches:
@@ -117,4 +124,5 @@ you need to keep in mind when evaluating a Git workflow:
     software
   - Needs a very good Continuous Integration/Deployment environment.
   - Production deployment from Master and/or Release.
+  - Use of tags for identifying software versions.
   
