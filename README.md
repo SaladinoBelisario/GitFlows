@@ -40,8 +40,24 @@ you need to keep in mind when evaluating a Git workflow:
 ## **Production-ready Flows:**
 * **Git Flow**
   ![Git flow](05%20(2).svg)
-  When it fits best?
+  _Original Gitflow:_ 
+  - One branch for every new Feature to be introduced in the 
+  software.
+  - The changes are committed to Develop branch.
+  - Bug fixed in Develop branch.
+  - Severe bugs work with a Hotfix branch.
+  - **Production-ready** software it's incorporated in Release branch.
+  - **NOT friendly with Continuous Delivery**.
+  - Lack of consistency compared with other flows 
+    (Production code it's not Master code).
   
+  _Notes for a modern Gitflow:_
+  The original author (Vincent Driessen) has posted an
+  actualization note about gitflow because it was conceived
+  in 2010, the kind of software it's supposed to support 
+  this flow was not the same as our modern software; you can
+  see this note in [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/).
+
 * **Github Flow**
   ![Create a branch](g1.PNG)
   ![Add commits](g2.PNG)
