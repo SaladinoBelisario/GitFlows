@@ -92,8 +92,22 @@ you need to keep in mind when evaluating a Git workflow:
   ![Master-only](basic.png)
 * **Git release Flow**
   ![Microsoft's workflow with git release](branch-strategy.png)
+  - Topic branches:
+    Mini-features developed (very specific and concrete functionality, 
+    minimal work units).
+  - Milestones:
+    Every 3 weeks (for example), when the _sprint_ has finished all the topic 
+    branches from that period are integrated into the release.
+  - Thought for working with a lot of pull-request rate (**large teams**).
+  - A lot of features deployed in every sprint.
 * **GitLab Flow**
   ![Gitlab workflow](Gitlab.PNG)
+  - Master is used for staging changes.
+  - One branch for every environment (one for production, one for pre-production).
+  - Merge changes with cherry-pick.
+  ![Gitlab workflow](gitlab_2.png)
+  - Very secure workflow.
+  - Can reduce bugs in production.
 * **Trunk-based development**
   f
   ![Trunk-based](trunk-based.webp)
