@@ -50,6 +50,8 @@ you need to keep in mind when evaluating a Git workflow:
   - **NOT friendly with Continuous Delivery**.
   - Lack of consistency compared with other flows 
     (Production code it's not Master code).
+  - Lack of confidence in Deployment and test suites (different environments 
+    for different branches).
   
   _Notes for a modern Gitflow:_
   The original author (Vincent Driessen) has posted an
@@ -90,6 +92,13 @@ you need to keep in mind when evaluating a Git workflow:
   - Only one feature at a time deployed.
 * **Master-only Flow**
   ![Master-only](basic.png)
+  - AKA Single-branch
+  - Only work with Master branch.
+  - Force the commit directly to Master.
+  - Good quality code committed.
+  - Needs a good test suite.
+  - Needs good communication, cohesion and a very mature development team.
+  - Good for embracing pair-programming.
 * **Git release Flow**
   ![Microsoft's workflow with git release](branch-strategy.png)
   - Topic branches:
@@ -99,7 +108,7 @@ you need to keep in mind when evaluating a Git workflow:
     Every 3 weeks (for example), when the _sprint_ has finished all the topic 
     branches from that period are integrated into the release.
   - Thought for working with a lot of pull-request rate (**large teams**).
-  - A lot of features deployed in every sprint.
+  - A lot of features deployed in every sprint (a lot of things can fail).
 * **GitLab Flow**
   ![Gitlab workflow](Gitlab.PNG)
   - Master is used for staging changes.
@@ -110,6 +119,7 @@ you need to keep in mind when evaluating a Git workflow:
   - Can reduce bugs in production, **more confidence in production deployment**.
   - More complex releases.
   - Good for Continuous Delivery but not best.
+  - What you build it's what your test in every environment (immutable build).
 * **Trunk-based development**
   ![Trunk-based](trunk-based.webp)
   - Release branches:
@@ -117,4 +127,6 @@ you need to keep in mind when evaluating a Git workflow:
     software
   - Needs a very good Continuous Integration/Deployment environment.
   - Production deployment from Master and/or Release.
+  - Use of tags for identifying software versions.
+  - Trusts in a robust test suite. 
   
