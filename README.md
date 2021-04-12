@@ -60,11 +60,34 @@ you need to keep in mind when evaluating a Git workflow:
 
 * **Github Flow**
   ![Create a branch](g1.PNG)
+  Branches are for testing ideas and experiment features,
+  when you need these ideas in Master you need your code to 
+  be reviewed before merging.
   ![Add commits](g2.PNG)
+  Commit your new ideas to your new branch like in any
+  other branch.
   ![Open a pull request](g3.PNG)
+  Pull Requests initiate discussions about your commits. 
+  Because they're tightly integrated with the underlying 
+  Git repository, anyone can see exactly what changes would 
+  be merged if they accept your request.
+  
+  By using GitHub's _@mention_ system in your Pull Request 
+  message, you can ask for feedback from specific people or teams
   ![Discuss and review your code](g4.PNG)
+  Once a discussion has been opened, the person or team reviewing 
+  your changes may have questions or comments. Perhaps the coding 
+  style doesn't match project guidelines, the change is missing 
+  unit tests, or maybe everything looks great and props are in order.
   ![Deploy](g5.PNG)
+  Deploy directly from your new branch, so you can figure out if
+  all it's in order before you merge into Master.
   ![Merge](g6.PNG)
+  Now that your changes have been verified in production, it is time to merge 
+  your code into the main branch.
+  - **Fast Deploy(Continuous Delivery friendly)**.
+  - **Fastest Rollback**.
+  - Only one feature at a time deployed.
 * **Master-only Flow**
   ![Master-only](basic.png)
 * **Git release Flow**
