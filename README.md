@@ -104,10 +104,17 @@ you need to keep in mind when evaluating a Git workflow:
   ![Gitlab workflow](Gitlab.PNG)
   - Master is used for staging changes.
   - One branch for every environment (one for production, one for pre-production).
-  - Merge changes with cherry-pick.
+  - Merge changes with **cherry-pick for bugfix**.
   ![Gitlab workflow](gitlab_2.png)
   - Very secure workflow.
-  - Can reduce bugs in production.
+  - Can reduce bugs in production, **more confidence in production deployment**.
+  - More complex releases.
+  - Good for Continuous Delivery but not best.
 * **Trunk-based development**
-  f
   ![Trunk-based](trunk-based.webp)
+  - Release branches:
+    Act as the official repository for a specific version fo your
+    software
+  - Needs a very good Continuous Integration/Deployment environment.
+  - Production deployment from Master and/or Release.
+  
