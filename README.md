@@ -2,7 +2,7 @@
 A little review about Pros and Cons about different workflows with git.
 
 ## **Basics:**
-### ¿What's the better workflow to use git?
+### What's the better workflow to use git?
 The most important thing is to consider the culture of your team. 
 You want the workflow to improve the efficiency of your team, 
 not a burden that limits productivity. Here are some questions 
@@ -123,7 +123,7 @@ you need to keep in mind when evaluating a Git workflow:
 * **Trunk-based development**
   ![Trunk-based](trunk-based.webp)
   - Release branches:
-    Act as the official repository for a specific version fo your
+    Act as the official repository for a specific version of your
     software
   - Needs a very good Continuous Integration/Deployment environment.
   - Production deployment from Master and/or Release.
