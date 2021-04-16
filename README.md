@@ -2,7 +2,7 @@
 A little review about Pros and Cons about different workflows with git.
 
 ## **Basics:**
-### ¿What's the better workflow to use git?
+### What's the better workflow to use git?
 The most important thing is to consider the culture of your team. 
 You want the workflow to improve the efficiency of your team, 
 not a burden that limits productivity. Here are some questions 
